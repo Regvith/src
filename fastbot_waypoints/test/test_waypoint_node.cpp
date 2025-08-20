@@ -24,7 +24,7 @@ protected:
   void sendAndCheckGoal(double x, double y, double z = 0.0) {
     auto goal_msg = Waypoint::Goal();
     goal_msg.position.x = x;
-    goal_msg.position.y = -y;
+    goal_msg.position.y = y;
     goal_msg.position.z = z;
 
     // Send goal and get handle
