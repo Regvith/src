@@ -47,7 +47,7 @@ protected:
     ASSERT_TRUE(result.result->success)
         << "Waypoint action to (" << x << ", " << y << ") reported failure";
 
-    rclcpp::sleep_for(2s); // small delay between goals
+   // rclcpp::sleep_for(2s); // small delay between goals
   }
 
   static rclcpp::Node::SharedPtr node_;
