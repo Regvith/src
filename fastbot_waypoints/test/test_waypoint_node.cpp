@@ -39,7 +39,7 @@ protected:
     // Wait for result
     auto result_future = client_->async_get_result(goal_handle);
     auto result_code =
-        rclcpp::spin_until_future_complete(node_, result_future, 200s);
+        rclcpp::spin_until_future_complete(node_, result_future, 40s);
     ASSERT_EQ(result_code, rclcpp::FutureReturnCode::SUCCESS)
         << "Timed out waiting for waypoint action result";
 
