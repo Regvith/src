@@ -58,7 +58,7 @@ rclcpp::Node::SharedPtr WaypointActionTest::node_ = nullptr;
 rclcpp_action::Client<Waypoint>::SharedPtr WaypointActionTest::client_ =
     nullptr;
 
-TEST_F(WaypointActionTest, SecondWaypoint) { sendAndCheckGoal(0.0, 0.1); }
+TEST_F(WaypointActionTest, SecondWaypoint) { sendAndCheckGoal(0.0, 0.07); }
 int main(int argc, char **argv) {
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
